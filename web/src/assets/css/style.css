@@ -1,0 +1,29 @@
+body,div,h1,h2,h3,p,input{
+    margin:0;
+    padding: 0;
+}
+body{
+    background: #fff; 
+    
+}
+
+html{
+    overflow-y:scroll
+}
+
+#app {
+    height: 100vh;;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex: 1;
+}
+
+.public{
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(202,203,204,0.5)
+}
