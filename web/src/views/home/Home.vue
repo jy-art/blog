@@ -89,16 +89,16 @@ export default {
   },
   methods: {
     async fachs() {
-      let res = await this.$http.get("/aeticle");
+      let res = await this.$http.get("/artcles");
       this.artclaList = res;
     },
     async fach() {
       let res;
       if (this.id) {
-        res = await this.$http.get(`/aeticles/${this.id}`);
+        res = await this.$http.get(`/artclesas/${this.id}`);
         this.artclaList = res;
       } else {
-        res = await this.$http.get("/aeticle");
+        res = await this.$http.get("/artcles");
         this.artclaList = res;
       }
     },

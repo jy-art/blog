@@ -39,7 +39,7 @@ export default {
   },
   methods: {
     async fach() {
-      const res = await this.$http.get(`/aeticle/${this.id}`);
+      const res = await this.$http.get(`/artcles/${this.id}`);
       this.artcle = res.data;
     }
   },
@@ -70,9 +70,6 @@ export default {
   font-size: 12px;
   color: #a59c9c;
   padding-top: 10px;
-}
-.article-test {
-  padding: 0 10px;
 }
 .categor-name {
   padding-right: 2px;
@@ -154,5 +151,9 @@ code.has-numbering {
 }
 .article-code p {
   padding-left:38px ;
+ 
+}
+.article-test span{
+   padding-right: 8px;
 }
 </style>

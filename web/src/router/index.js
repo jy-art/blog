@@ -35,7 +35,10 @@ const routes = [
     path: '/class',
     component: Class,
   },
-  
+  {
+    path: '/class/:id',
+    component: Home,
+  },
   {
     path: '/about',
     component: About,
