@@ -16,13 +16,12 @@
           <span class="date">{{artcle.updatedAt | date}}</span>
         </p>
       </div>
-
-      <pre v-highlight><code class="article-code" v-html="artcle.body"></code></pre>
+        <pre class="ql-snow" v-highlight><code class="ql-editor" v-html="artcle.body"></code></pre>
     </div>
   </div>
 </template>
 
-<script>
+<script scoped>
 import dayjs from "dayjs";
 export default {
   data() {
@@ -71,9 +70,6 @@ export default {
   color: #a59c9c;
   padding-top: 10px;
 }
-.categor-name {
-  padding-right: 2px;
-}
 .article i {
   font-size: 12px;
   margin-right: 2px;
@@ -82,19 +78,10 @@ export default {
   background: #fff;
   color: black;
 }
-.ql-align-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .ql-syntax {
   padding: 8px;
   background: #fafafa;
   font-size: 18px;
-}
-.article img {
-  max-width: 59%;
-  margin-bottom: 4px;
 }
 
 pre {
@@ -105,54 +92,7 @@ pre {
   background: #fff;
   overflow: hidden;
 }
-code {
-  display: block;
-  padding: 12px 24px;
-  overflow-y: auto;
-  font-weight: 300;
-  font-family: Menlo, monospace;
-  font-size: 0.8em;
-}
-code.has-numbering {
-  margin-left: 21px;
-}
-.pre-numbering {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 20px;
-  padding: 12px 2px 12px 0;
-  border-right: 1px solid #c3ccd0;
-  border-radius: 3px 0 0 3px;
-  background-color: #eee;
-  text-align: right;
-  font-family: Menlo, monospace;
-  font-size: 0.8em;
-  color: #aaa;
-}
-.hljs-variable {
-  color: #aaa;
-}
-.hljs-tag {
-  color: #000;
-}
-.ql-video {
-  display: block;
-  width: 100%;
-  height: 500px;
-}
-.article-code blockquote {
-  font-weight: 800;
-  font-size: 16px;
-  border-left: 4px solid #ccc;
-  margin-bottom: 5px;
-  margin-top: 5px;
-  padding-left: 16px;
-}
-.article-code p {
-  padding-left:38px ;
- 
-}
+
 .article-test span{
    padding-right: 8px;
 }

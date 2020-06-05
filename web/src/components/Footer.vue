@@ -15,7 +15,6 @@ export default {};
 .footer {
   display: flex;
   width: 100%;
-  align-items: flex-end;
 }
 .footer-con {
   flex: 1;

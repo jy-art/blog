@@ -2,7 +2,10 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import 'assets/css/style.css'
+import 'quill/dist/quill.snow.css'
+import 'assets/css/util.css'
 import './plugins/element.js'
+
 Vue.config.productionTip = false
 import axios from 'axios'
 

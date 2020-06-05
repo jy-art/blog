@@ -44,15 +44,15 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items:flex-end;
+  padding-bottom:30px;
   width: 80%;
   height: 80px;
-  padding-bottom: 30px;
   margin: 0 auto;
 }
 .nav-r {
   font-size: 18px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-around;
   margin-right: 20px;
 }
 .nav-r p {

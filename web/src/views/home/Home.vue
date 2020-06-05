@@ -123,8 +123,8 @@ export default {
 }
 .article {
   width: 80%;
-  height: 200px;
   margin: 0 auto;
+  height: 200px;
   margin-bottom: 30px;
   box-shadow: 8px -3px 14px 4px rgba(202, 203, 204, 0.5);
   border-radius: 18px;

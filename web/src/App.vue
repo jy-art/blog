@@ -1,23 +1,24 @@
 <template>
   <div id="app">
-    <TabBer/> 
+    <TabBer></TabBer>
     <router-view></router-view>
-    <Footer/>
+    <Footer></Footer>
   </div>
 </template>
 
 <script>
-
-import TabBer  from "components/TabBer";
-import Footer  from "components/Footer";
+import TabBer from "components/TabBer";
+import Footer from "components/Footer";
 export default {
-  name: 'app',
+  name: "app",
   components: {
     TabBer,
     Footer
   }
-}
+};
 </script>
 
-<style>
+<style scoped>
+
+
 </style>

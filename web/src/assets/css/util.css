@@ -1,0 +1,28 @@
+.hljs{
+    background:#FFF ;
+  }
+.hljs, .hljs-tag, .css .hljs-rules, .css .hljs-value, .css .hljs-function .hljs-preprocessor, .hljs-pragma{
+    color: #000;
+}
+.hljs-variable, .hljs-params, .hljs-class .hljs-title{
+    color: red;
+}
+.ql-video {
+    display: block;
+    width: 100%;
+    height: 500px;
+  }
+.ql-syntax {
+    padding: 8px;
+    background: #fafafa;
+    font-size: 18px;
+  }
+.ql-snow .ql-editor pre.ql-syntax {
+    background-color: #f0f0f0;
+    color: #000;
+    overflow: visible;
+  }
+
+  .ql-snow .ql-editor img {
+    max-width: 60%;
+  }
