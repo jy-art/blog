@@ -25,6 +25,7 @@
         </div>
 
         <div
+          v-if="item.body"
           class="body"
           v-html="$options.filters.ellipsis($options.filters.removeHtmlStyle(item.body))"
         ></div>

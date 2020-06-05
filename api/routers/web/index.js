@@ -35,8 +35,7 @@ module.exports = app=> {
         res.send(aets)
     })
     router.get('/searchs/:keyword',async(req,res) => {
-        const keyword = req.params.keyword
-        const reg = new RegExp(keyword, 'i')
+        const reg = new RegExp(req.params.keyword.replace(/[-\/\\^$*+?.()|[\]{}]/g,'\\*'), 'i')
         const model = await Article.find(
             {
                 $or : [

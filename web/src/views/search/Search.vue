@@ -29,6 +29,7 @@
         </div>
 
         <div
+          v-if="item.body"
           class="body"
           v-html="$options.filters.ellipsis($options.filters.removeHtmlStyle(item.body))"
         ></div>
@@ -67,7 +68,8 @@ export default {
       this.list =[]
       this.keyword=this.keyword.replace(/[, ]/g,'')
       if (this.keyword) {
-        const res = await this.$http.get(`/searchs/${this.keyword}`);
+        const key = encodeURIComponent(this.keyword)
+        const res = await this.$http.get(`/searchs/${key}`);
         this.list = res.data;
       }
     }
@@ -97,9 +99,10 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .article {
   width: 80%;
+  height: 200px;
   margin: 0 auto;
   margin-bottom: 30px;
   box-shadow: 8px -3px 14px 4px rgba(202, 203, 204, 0.5);
